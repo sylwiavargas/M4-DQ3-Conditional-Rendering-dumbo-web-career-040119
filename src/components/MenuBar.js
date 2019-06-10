@@ -14,20 +14,20 @@ const MenuBar = (props) => {
   */
 
   return (
-    <div className="ui four item menu">
-      <a className="item active" id="profile" onClick= {(event) => {props.changeComponent(event.target.id)}}>
+    <div className="ui four item menu" onClick= {(event) => {props.changeComponent(event.target.id)}}>
+      <a className="item active" id="profile" >
         <i className="user large icon" id="profile"/>
       </a>
 
-      <a className="item" id="photos" onClick= {(event) => {props.changeComponent(event.target.id)}}>
+      <a className="item" id="photos">
         <i className="photo large icon" id="photos"/>
       </a>
 
-      <a className="item" id="cocktails" onClick= {(event) => {props.changeComponent(event.target.id)}}>
+      <a className="item" id="cocktails">
         <i className="cocktail large icon" id="cocktails"/>
       </a>
 
-      <a className="item" id="pokemon" onClick= {(event) => {props.changeComponent(event.target.id)}}>
+      <a className="item" id="pokemon">
         <i className=" themeisle large icon" id="pokemon"/>
       </a>
     </div>
